@@ -12,7 +12,7 @@ Most of my experience has been around building AI-powered workflow systems, real
 - LinkedIn: linkedin.com/in/baljinnyam-puntsagnorov
 - Email: baljaa367@gmail.com
 
----
+----
 
 ## Experience
 
