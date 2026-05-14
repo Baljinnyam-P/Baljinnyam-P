@@ -8,7 +8,7 @@ Most of my experience has been around building AI-powered workflow systems, real
 
 ## Links
 
-- Portfolio: baljinnyam-p.github.io/portfolio
+- Portfolio: baljinnyam-p.github.io/Baljinnyam-P/
 - LinkedIn: linkedin.com/in/baljinnyam-puntsagnorov
 - Email: baljaa367@gmail.com
 
