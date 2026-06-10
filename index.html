@@ -3,426 +3,721 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Development Portfolio</title>
-    <!-- Font Awesome CDN for icons -->
+    <title>Baljinnyam Puntsagnorov | AI Native & Full-Stack Systems Engineer</title>
+    <meta name="description" content="AI Native Software Engineer specializing in full-stack AI products, agentic workflows, and high-concurrency distributed systems.">
+    <!-- Font Awesome for clean, sharp SVG icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- High-end geometric and editorial typography from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style-new.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Minimalist Glass Header -->
     <nav class="navbar">
         <div class="container nav-container">
-            <div class="logo">Port<span>folio</span></div>
-            <button class="hamburger" id="hamburger">
+            <div class="logo">BP<span>.systems</span></div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#principles">Principles</a></li>
+                <li><a href="#systems">Selected Work</a></li>
+                <li><a href="#deep-dives">Deep Dives</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <!-- Resume download link (single source file) -->
-                <li><a href="Baljinnyam_Puntsagnorov_Resume_Engineer-1.pdf" download><i class="fas fa-file-download"></i> Resume</a></li>
+                <li><a href="Baljinnyam_Puntsagnorov_Julius.pdf" download class="nav-resume-btn"><i class="fas fa-file-pdf"></i> Resume</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <!-- Balanced, Human Hero Section -->
+    <section id="about" class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1>Hi, I'm <span>Baljinnyam Puntsagnorov</span></h1>
-                <p>Full-stack software engineer specializing in backend systems, clean UI/UX and cloud-native applications.</p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn btn-primary">View My Projects</a>
-                    <!-- Hero section resume button -->
-                    <a href="Baljinnyam_Puntsagnorov_Resume_Engineer-1.pdf" download class="btn btn-secondary"><i class="fas fa-file-download"></i> Resume</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <h1>Baljinnyam Puntsagnorov</h1>
+                    <p class="hero-subtitle">Full Stack / AI Engineer building reliable AI products, distributed backends, and high-performance mobile apps.</p>
+                    
+                    <p class="hero-bio">
+                        Most of my recent work has focused on AI workflows, real-time mobile sync engines, and backend reliability under messy, real-world conditions. I enjoy building systems where reliability, product experience, and operational simplicity matter equally. I focus on making failures observable, keeping models grounded, and ensuring users get instant UI interactions.
+                    </p>
+                    
+                    <div class="hero-focus">
+                        <span class="focus-title">Active Focus:</span>
+                        <span class="focus-item">AI reliability</span>
+                        <span class="focus-item">local-first sync</span>
+                        <span class="focus-item">retrieval architectures</span>
+                        <span class="focus-item">distributed coordination</span>
+                        <span class="focus-item">observability</span>
+                    </div>
+
+                    <div class="hero-links">
+                        <a href="https://github.com/Baljinnyam-P" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/baljinnyamm" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                        <a href="mailto:baljaa367@gmail.com" aria-label="Email Contact"><i class="fas fa-envelope"></i> Email</a>
+                        <a href="Baljinnyam_Puntsagnorov_Julius.pdf" download aria-label="Download Resume"><i class="fas fa-file-download"></i> Resume PDF</a>
+                    </div>
+                </div>
+                <div class="hero-intro-box">
+                    <div class="intro-card">
+                        <h3>Systems Thinking + Product Ownership</h3>
+                        <p>I believe an engineer's job is not just to write code, but to understand tradeoffs, prevent failure modes, and keep the user experience seamless when physical constraints (like network drops or slow model gateways) interfere.</p>
+                        <div class="intro-stat">
+                            <span class="stat-num">60%</span>
+                            <span class="stat-txt">Back-office manual effort reduced via AI workflows</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Grounded Engineering Principles Section -->
+    <section id="principles" class="principles">
         <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
+            <div class="section-header-left">
+                <span class="section-tag">Philosophy</span>
+                <h2>What I Care About</h2>
+                <p class="section-desc-left">Three core operational principles that guide how I design, write, and debug software in production.</p>
             </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <!-- Replace with your image -->
-                    <img src="images/profile.jpg" alt="Profile Photo">
-                </div>
-                <div class="about-text">
-                    <h3>Professional Summary</h3>
-                    <p>Full-stack software engineer specializing in backend systems and cloud-native applications. I enjoy translating ideas into streamlined components and APIs while keeping performance, clarity, and maintainability in mind.</p>
-                    <p>Experienced in designing and shipping secure, scalable web platforms, including payment integrations, event-driven services, and distributed architectures</p>
-                    <p>Strong foundation in Node.js, Spring Boot, React, and AWS Services, with real-world fintech and production project experience. Focused on clean system design, reliability, and building software that performs at scale.</p>
-
-                    <a href="#skills" class="btn btn-secondary">My Skills</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-title">
-                <h2>My Skills</h2>
-            </div>
-            <div class="skills-container">
-                <!-- Skill 1 -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-node-js"></i>
-                    </div>
-                    <h3 class="skill-title">Node.js</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <h3 class="skill-title">Spring Boot</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    <h3 class="skill-title">ReactJS</h3>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-flask"></i>
-                    </div>
-                    <h3 class="skill-title">Flask</h3>
-                </div>
-                <!-- Skill 2 -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-java"></i>
-                    </div>
-                    <h3 class="skill-title">Java</h3>
-                </div>
-                <!-- Skill 3 -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <h3 class="skill-title">JavaScript</h3>
-                </div>
-                <!-- Skill 4 -->
-                 <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    <h3 class="skill-title">Python</h3>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3 class="skill-title">SQL</h3>
-                </div>
-                
-                <!-- Skill 5 -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-aws"></i>
-                    </div>
-                    <h3 class="skill-title">AWS</h3>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3 class="skill-title">DynamoDB</h3>
-                </div>
-                <!-- Skill 6 -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3 class="skill-title">MongoDB</h3>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3 class="skill-title">PostgreSQL</h3>
-                </div>
-                <!-- Skill 7 -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-git-alt"></i>
-                    </div>
-                    <h3 class="skill-title">Git</h3>
-                </div>
-                <!-- Skill 8: PostgreSQL -->
-                
-                <!-- Skill 9: TailwindCSS -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3 class="skill-title">CI/CD</h3>
-                </div>
-                <!-- Skill 14: Stripe -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-credit-card"></i>
-                    </div>
-                    <h3 class="skill-title">Stripe</h3>
-                </div>
-                <!-- Skill 16: Firebase -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-fire"></i>
-                    </div>
-                    <h3 class="skill-title">Firebase</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-title">
-                <h2>My Projects</h2>
-            </div>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-img"><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=200&fit=crop&auto=format" alt="Campus Connect - Students collaborating"></div>
-                    <div class="project-info">
-                        <h3 class="project-title">Campus-Connect</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">Nodejs</span>
-                            <span class="project-tag">AWS</span>
-                            <span class="project-tag">DynamoDB</span>
-                            <span class="project-tag">Aws Lambda</span>
-                            <span class="project-tag">Firebase</span>
-                            <span class="project-tag">Stripe</span>
-                            <span class="project-tag">S3</span>
-                            <span class="project-tag">CloudFront</span>
-                            <span class="project-tag">Zustand</span>
-                            <span class="project-tag">TailwindCSS</span>
-                            <span class="project-tag">Vite</span>
-                        </div>
-                        <p class="project-description">A marketplace platform for students to buy, sell, and exchange physical and digital products on campus.</p>
-                        <div class="project-links">
-                            <a href="https://campus-connect-csc-482.vercel.app/" target="_blank" class="project-link live-link">View Live</a>
-                            <a href="https://github.com/Baljinnyam23/Campus-Connect-CSC482" target="_blank" class="project-link github-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 1.1: StudyPlanner -->
-                <div class="project-card">
-                    <div class="project-img"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=200&fit=crop&auto=format" alt="StudyPlanner - Collaborative Study Planning App"></div>
-                    <div class="project-info">
-                        <h3 class="project-title">StudyPlanner</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">Flask</span>
-                            <span class="project-tag">PostgreSQL</span>
-                            <span class="project-tag">Socket.IO</span>
-                            <span class="project-tag">Vercel</span>
-                            <span class="project-tag">Render</span>
-                        </div>
-                        <p class="project-description">A real-time collaborative study planner where students can create, share, and update group study schedules live. Built for seamless teamwork with drag-and-drop tasks and instant updates across users.</p>
-                        <div class="project-links">
-                            <a href="https://project1-topaz-mu.vercel.app" target="_blank" class="project-link live-link">View Live</a>
-                            <a href="https://github.com/Baljinnyam-P/Study-Planner" target="_blank" class="project-link github-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 1.2: FriendAligner -->
-                <div class="project-card">
-                    <div class="project-img"><img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=400&h=200&fit=crop&auto=format" alt="FriendAligner - Collaborative Scheduling Platform"></div>
-                    <div class="project-info">
-                        <h3 class="project-title">FriendAligner</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Flask</span>
-                            <span class="project-tag">MySQL</span>
-                            <span class="project-tag">SQLAlchemy</span>
-                            <span class="project-tag">Google Places API</span>
-                        </div>
-                        <p class="project-description">A group scheduling app that helps friends find the best time and place to meet. Integrates shared calendars, real-time updates, and event suggestions using Google Places.</p>
-                        <div class="project-links">
-                            <a href="https://www.youtube.com/watch?v=GhvZoOWvor4" target="_blank" class="project-link live-link">View Live</a>
-                            <a href="https://github.com/Baljinnyam-P/FriendAligner" target="_blank" class="project-link github-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-img"><img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=200&fit=crop&auto=format" alt="Pet Sitter System - Dog with owner"></div>
-                    <div class="project-info">
-                        <h3 class="project-title">Pet Sitter Response Tracking System</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">PHP</span>
-                            <span class="project-tag">MySQL</span>
-                            <span class="project-tag">HTML</span>
-                        </div>
-                        <p class="project-description">A comprehensive system to track pet sitter responses, manage availability, and streamline pet care coordination.</p>
-                        <div class="project-links">
-
-                            <a href="https://github.com/MarinDushku/Pet-Sitter-Response-Tracking-System#" class="project-link github-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 2.5: Marketplace App -->
-                <div class="project-card">
-                    <div class="project-img"><img src="images/marketplace.jpg" alt="Marketplace App Screenshot"></div>
-                    <div class="project-info">
-                        <h3 class="project-title">Marketplace App</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Java</span>
-                            <span class="project-tag">JavaFX</span>
-                        </div>
-                        <p class="project-description"> A Java-based Marketplace Application that allows users to buy and sell products. The system uses a multi-threaded server architecture with synchronized access to shared resources. A graphical user interface (GUI) is built with JavaFX.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/Baljinnyam-P/Multithreaded-Marketplace-Application-Java" class="project-link github-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                <div class="project-img"><img src="https://github.com/user-attachments/assets/0eaa0d0f-406b-41de-87a2-a718621a3fbc" alt="Online Marketplace App Screenshot"></div>
-                <div class="project-info">
-                    <h3 class="project-title">JavaFX-based Desktop Interactive Digital Clock</h3>
-                    <div class="project-tags">
-                        <span class="project-tag">JavaFX</span>
-                        <span class="project-tag">Java</span>
-                    </div>
-                    </div>
-                    <p class="project-description"> This is a Java-based desktop clock application that features a modern graphical user interface, customizable alarms, and audio notifications </p>
-                    <div class="project-links">
-                        <a href="https://github.com/Baljinnyam-P/JavaFX-Interactive-Digital-Clock" target="_blank" class="project-link github-link">GitHub</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                <div class="project-img"><img src="images/charitygame.jpg" alt="Charity Water Game"></div>
-                <div class="project-info">
-                    <h3 class="project-title">Charity: Water Game</h3>
-                    <div class="project-tags">
-                        <span class="project-tag">HTML</span>
-                        <span class="project-tag">CSS</span>
-                        <span class="project-tag">JavaScript</span>
-                    </div>
-                    <p class="project-description">A browser game inspired by the real-world mission of bringing clean water to communities in need.</p>
-                    <div class="project-links">
-                        <a href="https://baljinnyam-p.github.io/Charity-Water-Game-Final/" target="_blank" class="project-link live-link">View Live</a>
-                        <a href="https://github.com/Baljinnyam-P/Charity-Water-Game-Final" target="_blank" class="project-link github-link">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="see-more-github" style="text-align:center; margin-top:2rem;">
-                <a href="https://github.com/Baljinnyam-P" target="_blank" class="btn btn-outline" style="font-size:1.1rem;">
-                    <i class="fab fa-github"></i> See more on GitHub
-                </a>
-            </div>
-                
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-img"><img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=200&fit=crop&auto=format" alt="Coming Soon - Development workspace"></div>
-                    <div class="project-info">
-                        <h3 class="project-title">Project Coming Soon</h3>
-                        <p class="project-description">I am currently working on a new and exciting project. Stay tuned for more details!</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link live-link" style="visibility: hidden;">Live Demo</a>
-                            <a href="#" class="project-link github-link" style="visibility: hidden;">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             
+            <div class="principles-grid">
+                <div class="principle-card">
+                    <div class="principle-num">01</div>
+                    <h3>Design for retries and partial failure by default</h3>
+                    <p>Production bugs are usually coordination bugs. Flaky mobile links, external gateway drops, and server timeouts are normal. I build with idempotent transactions, outbox queues, and circuit breakers rather than assuming happy-path success.</p>
+                </div>
+                
+                <div class="principle-card">
+                    <div class="principle-num">02</div>
+                    <h3>AI systems need validation boundaries</h3>
+                    <p>LLMs are probabilistic. To build stable systems with them, we must treat structured outputs, validation guards, and retrieval metrics as core backend infrastructure. Never trust raw model outputs without validation.</p>
+                </div>
+                
+                <div class="principle-card">
+                    <div class="principle-num">03</div>
+                    <h3>Local-first sync is a user experience feature</h3>
+                    <p>Syncing local offline databases and optimistic frontend states is a distributed systems problem in disguise. But the goal is purely human: let users write instantly without watching spinners, regardless of network conditions.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Selected Engineering Work (Featured Systems) -->
+    <section id="systems" class="systems">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Production Work</span>
+                <h2>Selected Engineering Work</h2>
+                <p class="section-desc">Practical systems I designed, built, and debugged, highlighting technical tradeoffs and product outcomes.</p>
+            </div>
+
+            <div class="systems-list">
+                <!-- System 1: Ember -->
+                <div class="system-item">
+                    <div class="system-main">
+                        <div class="system-info">
+                            <span class="system-badge">Mobile & Sync Systems</span>
+                            <h3>Ember: Real-Time Sync & Habit Platform</h3>
+                            <p class="system-summary">
+                                A mobile social habit tracking application featuring a local-first sync engine, optimistic state reconciliation, and real-time group leaderboard aggregation.
+                            </p>
+
+                            <div class="system-meta-grid">
+                                <div>
+                                    <strong>Stack</strong>
+                                    <span>React Native, AWS Lambda, AppSync GraphQL, DynamoDB</span>
+                                </div>
+                                <div>
+                                    <strong>Core Patterns</strong>
+                                    <span>MMKV Offline Outbox, SQS FIFO, DynamoDB Streams</span>
+                                </div>
+                            </div>
+
+                            <div class="system-narrative">
+                                <h4>The Challenge</h4>
+                                <p>
+                                    Mobile networks are highly unreliable. Coordinating active habit logging, group check-ins, and animated heatmaps without freezing the UI or allowing duplicate entries during reconnects required offloading the write path and managing conflicts locally.
+                                </p>
+
+                                <h4>Key Decisions</h4>
+                                <ul>
+                                    <li><strong>MMKV over AsyncStorage:</strong> React Native's default storage created a noticeable UI stutter when serializing daily progress records during optimistic renders. MMKV reduced serialization latency, keeping renders locked at 60fps.</li>
+                                    <li><strong>SQS FIFO Queues:</strong> Group leaderboard aggregates required deterministic event ordering during reconnection sync waves. FIFO routing prevented out-of-order execution and simplified group score reconciliations.</li>
+                                </ul>
+
+                                <h4>What Broke & How I Fixed It</h4>
+                                <p>
+                                    Under poor network links, AppSync subscription sockets would drop silently. Users who updated habits offline returned to a screen that drifted from the server state. I resolved this by designing an offline transaction outbox. When offline, updates are persisted locally with unique idempotency keys. On reconnect, a background worker drains the outbox to a retry endpoint, utilizing high-water marks to avoid overwriting newer server modifications.
+                                </p>
+
+                                <h4>Outcome & Metrics</h4>
+                                <div class="metric-row">
+                                    <div class="metric-pill"><strong>60fps</strong> Smooth Skia Heatmap</div>
+                                    <div class="metric-pill"><strong>2,500</strong> Concurrent load capability</div>
+                                    <div class="metric-pill"><strong>DLQ</strong> Auto recovery vaults</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="system-assets">
+                            <div class="diagram-wrapper">
+                                <span class="asset-title"><i class="fas fa-project-diagram"></i> Data Coordination Flow</span>
+                                <!-- SVG for Ember -->
+                                <svg class="sys-diagram" viewBox="0 0 420 180" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100%" height="100%" fill="#101014" rx="4"/>
+                                    <!-- Nodes -->
+                                    <rect x="20" y="70" width="80" height="36" rx="3" fill="#1e1e24" stroke="#3f3f46" stroke-width="1"/>
+                                    <text x="60" y="92" font-family="'JetBrains Mono', monospace" font-size="10" fill="#f4f4f5" text-anchor="middle">Client Outbox</text>
+                                    
+                                    <rect x="150" y="70" width="80" height="36" rx="3" fill="#1e1e24" stroke="#3f3f46" stroke-width="1"/>
+                                    <text x="190" y="92" font-family="'JetBrains Mono', monospace" font-size="10" fill="#f4f4f5" text-anchor="middle">SQS FIFO</text>
+                                    
+                                    <rect x="280" y="25" width="110" height="36" rx="3" fill="#1e1e24" stroke="#3f3f46" stroke-width="1"/>
+                                    <text x="335" y="47" font-family="'JetBrains Mono', monospace" font-size="10" fill="#f4f4f5" text-anchor="middle">DynamoDB (State)</text>
+
+                                    <rect x="280" y="115" width="110" height="36" rx="3" fill="#1e1e24" stroke="#6366f1" stroke-width="1"/>
+                                    <text x="335" y="137" font-family="'JetBrains Mono', monospace" font-size="10" fill="#a5b4fc" text-anchor="middle">AppSync Broadcast</text>
+
+                                    <!-- Arrows -->
+                                    <line x1="100" y1="88" x2="150" y2="88" stroke="#71717a" stroke-width="1" stroke-dasharray="2,2"/>
+                                    <polygon points="150,88 144,84 144,92" fill="#71717a"/>
+                                    
+                                    <path d="M 230,88 L 255,88 L 255,43 L 280,43" fill="none" stroke="#71717a" stroke-width="1"/>
+                                    <polygon points="280,43 274,39 274,47" fill="#71717a"/>
+
+                                    <path d="M 230,88 L 255,88 L 255,133 L 280,133" fill="none" stroke="#6366f1" stroke-width="1"/>
+                                    <polygon points="280,133 274,129 274,137" fill="#6366f1"/>
+
+                                    <!-- Labels -->
+                                    <text x="125" y="80" font-family="Inter, sans-serif" font-size="8" fill="#71717a" text-anchor="middle">Reconnect Drain</text>
+                                    <text x="250" y="105" font-family="Inter, sans-serif" font-size="8" fill="#a5b4fc" text-anchor="middle" transform="rotate(-90 250 105)">WebSocket</text>
+                                </svg>
+                            </div>
+
+                            <div class="screenshot-placeholder" id="placeholder-ember">
+                                <div class="placeholder-border">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span class="ph-tag">EMBER_UI_SCREENSHOT.PNG</span>
+                                    <span class="ph-desc">Placeholder: Dynamic mobile habit heatmaps & real-time team logs. (Point to me to upload)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- System 2: Campus Connect -->
+                <div class="system-item">
+                    <div class="system-main">
+                        <div class="system-info">
+                            <span class="system-badge">Serverless Backends & E-Commerce</span>
+                            <h3>Campus Connect: Digital Marketplace</h3>
+                            <p class="system-summary">
+                                A serverless marketplace for physical and digital campus goods, secured with stateless authorization and gating download entitlements.
+                            </p>
+
+                            <div class="system-meta-grid">
+                                <div>
+                                    <strong>Stack</strong>
+                                    <span>React (Zustand), AWS Lambda, DynamoDB, API Gateway, S3</span>
+                                </div>
+                                <div>
+                                    <strong>Core Patterns</strong>
+                                    <span>Stripe Webhooks, Custom Lambda Authorizers, Gated Presigned URLs</span>
+                                </div>
+                            </div>
+
+                            <div class="system-narrative">
+                                <h4>The Problem</h4>
+                                <p>
+                                    Digital asset stores face a common issue: users sharing asset links directly, bypassing checkout. Delivering purchased digital assets instantly while guaranteeing link security required a dynamic entitlement-gating layer that scales seamlessly.
+                                </p>
+
+                                <h4>Architecture</h4>
+                                <p>
+                                    Built using a serverless backend composed of specialized Lambda workers. All user endpoints are gated by a Custom API Gateway Authorizer that checks JWT validation signatures and securely caches authorization policies in memory to minimize verification latency.
+                                </p>
+
+                                <h4>Reliability Considerations</h4>
+                                <p>
+                                    To secure digital purchases, raw asset files are kept in private S3 buckets. Upon a validated purchase (routed via Stripe webhooks), the backend generates a short-lived (120s) presigned S3 URL dynamically. During k6 load testing with 2,500 concurrent users, hot-partition bottlenecks appeared on category queries. I resolved this by appending a synthetic hash suffix to the category primary keys, distributing read/write throughput evenly across database partitions.
+                                </p>
+
+                                <h4>Results</h4>
+                                <div class="metric-row">
+                                    <div class="metric-pill"><strong>120s TTL</strong> Presigned Security</div>
+                                    <div class="metric-pill"><strong>85ms P99</strong> Hot-Partition Latency</div>
+                                    <div class="metric-pill"><strong>Stripe</strong> Verified Webhooks</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="system-assets">
+                            <div class="diagram-wrapper">
+                                <span class="asset-title"><i class="fas fa-lock"></i> Gated Delivery Handoff</span>
+                                <!-- SVG for Campus Connect -->
+                                <svg class="sys-diagram" viewBox="0 0 420 180" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100%" height="100%" fill="#101014" rx="4"/>
+                                    <!-- Nodes -->
+                                    <rect x="15" y="70" width="80" height="36" rx="3" fill="#1e1e24" stroke="#3f3f46" stroke-width="1"/>
+                                    <text x="55" y="92" font-family="'JetBrains Mono', monospace" font-size="10" fill="#f4f4f5" text-anchor="middle">Stripe Hook</text>
+                                    
+                                    <rect x="145" y="70" width="90" height="36" rx="3" fill="#1e1e24" stroke="#3f3f46" stroke-width="1"/>
+                                    <text x="190" y="92" font-family="'JetBrains Mono', monospace" font-size="10" fill="#f4f4f5" text-anchor="middle">Verify Entitle</text>
+                                    
+                                    <rect x="285" y="25" width="115" height="36" rx="3" fill="#1e1e24" stroke="#3f3f46" stroke-width="1"/>
+                                    <text x="342" y="47" font-family="'JetBrains Mono', monospace" font-size="10" fill="#f4f4f5" text-anchor="middle">Generate Presign</text>
+
+                                    <rect x="285" y="115" width="115" height="36" rx="3" fill="#1e1e24" stroke="#10b981" stroke-width="1"/>
+                                    <text x="342" y="137" font-family="'JetBrains Mono', monospace" font-size="10" fill="#a7f3d0" text-anchor="middle">120s Gated S3 URL</text>
+
+                                    <!-- Arrows -->
+                                    <line x1="95" y1="88" x2="145" y2="88" stroke="#71717a" stroke-width="1"/>
+                                    <polygon points="145,88 139,84 139,92" fill="#71717a"/>
+                                    
+                                    <path d="M 235,88 L 260,88 L 260,43 L 285,43" fill="none" stroke="#71717a" stroke-width="1"/>
+                                    <polygon points="285,43 279,39 279,47" fill="#71717a"/>
+
+                                    <path d="M 235,88 L 260,88 L 260,133 L 285,133" fill="none" stroke="#10b981" stroke-width="1"/>
+                                    <polygon points="285,133 279,129 279,137" fill="#10b981"/>
+
+                                    <!-- Labels -->
+                                    <text x="120" y="80" font-family="Inter, sans-serif" font-size="8" fill="#71717a" text-anchor="middle">Webhook Event</text>
+                                    <text x="255" y="105" font-family="Inter, sans-serif" font-size="8" fill="#a7f3d0" text-anchor="middle" transform="rotate(-90 255 105)">Direct Fetch</text>
+                                </svg>
+                            </div>
+
+                            <div class="screenshot-placeholder" id="placeholder-campus">
+                                <div class="placeholder-border">
+                                    <i class="fas fa-desktop"></i>
+                                    <span class="ph-tag">CAMPUS_CONNECT_PREVIEW.PNG</span>
+                                    <span class="ph-desc">Placeholder: Web interface listing products and Stripe checkout verification. (Point to me to upload)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- System 3: AI Document Processing -->
+                <div class="system-item">
+                    <div class="system-main">
+                        <div class="system-info">
+                            <span class="system-badge">AI Systems & Document Processing</span>
+                            <h3>AI Document Processing Pipeline</h3>
+                            <p class="system-summary">
+                                A high-throughput, retrieval-grounded multi-agent system engineered to verify, extract, and audit operational enterprise document files.
+                            </p>
+
+                            <div class="system-meta-grid">
+                                <div>
+                                    <strong>Stack</strong>
+                                    <span>Python, FastAPI, Vector Indexes, BM25 Search, Redis</span>
+                                </div>
+                                <div>
+                                    <strong>Core Patterns</strong>
+                                    <span>Structured Tool-Calling, Pydantic Schema Guards, Semantic Cache Bypasses</span>
+                                </div>
+                            </div>
+
+                            <div class="system-narrative">
+                                <h4>System Overview</h4>
+                                <p>
+                                    Built for complex operational environments, this system converts raw text documents into validated structural datasets. It uses multi-step agent verification loops that coordinate vector indices and structured tool calls to extract critical details without manual overhead.
+                                </p>
+
+                                <h4>Core Challenge</h4>
+                                <p>
+                                    Since LLMs are probabilistic, raw generations can easily hallucinate structural details or drift from facts. We needed to keep the extracted outputs strictly grounded, reduce latency spikes from model evaluations, and make system failures completely observable in production.
+                                </p>
+
+                                <h4>Implementation</h4>
+                                <p>
+                                    I designed a dual-stage retrieval engine combining semantic vector search with lexical BM25 rerankers to surface highly relevant grounding paragraphs. Raw outputs are parsed against strict Pydantic schema validation boundaries at the API gateway layer. To optimize throughput, I implemented a local semantic caching layer (Redis) that maps vector embeddings of incoming requests: queries matching existing cached intents with high cosine similarity bypass LLM calls entirely, reducing P50 latency.
+                                </p>
+
+                                <h4>Impact</h4>
+                                <div class="metric-row">
+                                    <div class="metric-pill"><strong>60%</strong> Reduction in manual audit review</div>
+                                    <div class="metric-pill"><strong>25%</strong> Latency reduction in P50 times</div>
+                                    <div class="metric-pill"><strong>Pydantic</strong> Structured output guards</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="system-assets">
+                            <div class="diagram-wrapper">
+                                <span class="asset-title"><i class="fas fa-brain"></i> Grounded AI Retrieval</span>
+                                <!-- SVG for AI Systems -->
+                                <svg class="sys-diagram" viewBox="0 0 420 180" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100%" height="100%" fill="#101014" rx="4"/>
+                                    <!-- Nodes -->
+                                    <rect x="15" y="70" width="80" height="36" rx="3" fill="#1e1e24" stroke="#3f3f46" stroke-width="1"/>
+                                    <text x="55" y="92" font-family="'JetBrains Mono', monospace" font-size="10" fill="#f4f4f5" text-anchor="middle">Input Query</text>
+                                    
+                                    <rect x="145" y="70" width="90" height="36" rx="3" fill="#1e1e24" stroke="#3f3f46" stroke-width="1"/>
+                                    <text x="190" y="92" font-family="'JetBrains Mono', monospace" font-size="10" fill="#f4f4f5" text-anchor="middle">BM25/Vector Sync</text>
+                                    
+                                    <rect x="285" y="25" width="115" height="36" rx="3" fill="#1e1e24" stroke="#6366f1" stroke-width="1"/>
+                                    <text x="342" y="47" font-family="'JetBrains Mono', monospace" font-size="10" fill="#a5b4fc" text-anchor="middle">LLM Parse Loop</text>
+
+                                    <rect x="285" y="115" width="115" height="36" rx="3" fill="#1e1e24" stroke="#3f3f46" stroke-width="1"/>
+                                    <text x="342" y="137" font-family="'JetBrains Mono', monospace" font-size="10" fill="#f4f4f5" text-anchor="middle">Redis Semantic Bypass</text>
+
+                                    <!-- Arrows -->
+                                    <line x1="95" y1="88" x2="145" y2="88" stroke="#71717a" stroke-width="1"/>
+                                    <polygon points="145,88 139,84 139,92" fill="#71717a"/>
+                                    
+                                    <path d="M 235,88 L 260,88 L 260,43 L 285,43" fill="none" stroke="#6366f1" stroke-width="1"/>
+                                    <polygon points="285,43 279,39 279,47" fill="#6366f1"/>
+
+                                    <path d="M 235,88 L 260,88 L 260,133 L 285,133" fill="none" stroke="#71717a" stroke-width="1"/>
+                                    <polygon points="285,133 279,129 279,137" fill="#71717a"/>
+
+                                    <!-- Labels -->
+                                    <text x="120" y="80" font-family="Inter, sans-serif" font-size="8" fill="#71717a" text-anchor="middle">Semantic Rerank</text>
+                                    <text x="255" y="105" font-family="Inter, sans-serif" font-size="8" fill="#a5b4fc" text-anchor="middle" transform="rotate(-90 255 105)">Validator</text>
+                                </svg>
+                            </div>
+
+                            <div class="screenshot-placeholder" id="placeholder-ai">
+                                <div class="placeholder-border">
+                                    <i class="fas fa-cogs"></i>
+                                    <span class="ph-tag">AI_WORKFLOW_LOGS.PNG</span>
+                                    <span class="ph-desc">Placeholder: Document parsing dashboard tracing agent iterations & schema audits. (Point to me to upload)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collapsible Engineering Deep Dives (Postmortems) -->
+    <section id="deep-dives" class="deep-dives">
+        <div class="container">
+            <div class="section-header-left">
+                <span class="section-tag">Engineering Notes</span>
+                <h2>Engineering Deep Dives</h2>
+                <p class="section-desc-left">Brief, 300-word postmortem writeups detailing real debugging, tradeoffs, and failure resolutions in production.</p>
+            </div>
+
+            <div class="accordion-group">
+                <!-- Deep Dive 1 -->
+                <details class="dd-card">
+                    <summary class="dd-summary">
+                        <div class="dd-summary-content">
+                            <span class="dd-badge">Distributed Payments</span>
+                            <h4>Preventing Duplicate Payment Execution in Distributed Systems</h4>
+                        </div>
+                        <i class="fas fa-chevron-down dd-icon"></i>
+                    </summary>
+                    <div class="dd-content">
+                        <h5>Problem</h5>
+                        <p>During downstream payment gateway instability, cross-border network retries on SocialPay microservices periodically triggered double transactions inside third-party ledger integrations, risking financial state drift.</p>
+
+                        <h5>Why It Was Difficult</h5>
+                        <p>External payment routes returned non-deterministic connection timeouts. Under stress, mobile users naturally tapped the confirmation button multiple times, generating parallel client requests that bypassed simple transient locks.</p>
+
+                        <h5>Failed Approaches</h5>
+                        <ul>
+                            <li><strong>Database row locking:</strong> Created heavy transactional contention on the core tables, degrading general API performance and leading to connection pooling exhaustion under load.</li>
+                            <li><strong>Naive retry suppression:</strong> Dropped legitimate network confirmations during valid partial gateway recoveries, locking users out of completed orders.</li>
+                        </ul>
+
+                        <h5>Final Design</h5>
+                        <p>I structured a transaction-scoped idempotency filter powered by Redis. Every payment request maps a unique idempotency key derived from the checkout session ID and product scope. Incoming duplicate calls lock on this key, waiting to retrieve the initial payment intent status. Combined with Spring State Machine transitions and Resilience4j circuit breakers, we isolated downstream gateway time-outs and eliminated duplicate transactions completely, achieving 99.95% payment platform uptime.</p>
+                    </div>
+                </details>
+
+                <!-- Deep Dive 2 -->
+                <details class="dd-card">
+                    <summary class="dd-summary">
+                        <div class="dd-summary-content">
+                            <span class="dd-badge">Mobile Offline-First</span>
+                            <h4>Designing Local-First Sync Under Unreliable Networks</h4>
+                        </div>
+                        <i class="fas fa-chevron-down dd-icon"></i>
+                    </summary>
+                    <div class="dd-content">
+                        <h5>Problem</h5>
+                        <p>Mobile users tracking goals in Ember experienced frequent, silent sync disconnects under variable cellular networks. The local client state diverged from backend database partitions, creating confusing UI rollbacks on app restarts.</p>
+
+                        <h5>Why It Was Difficult</h5>
+                        <p>Syncing offline writes requires merging conflicts in a specific sequence without duplicating entries. If a user logs three accomplishments offline, the client must serialize and queue events, applying merge reconciliations on reconnect without locking the UI thread.</p>
+
+                        <h5>Failed Approaches</h5>
+                        <ul>
+                            <li><strong>React Native AsyncStorage:</strong> Serializing state updates on the main thread blocked JS event execution, dropping frames from 60fps down to 24fps during background sync sweeps.</li>
+                            <li><strong>Last-Write-Wins (LWW):</strong> Standard date-based syncing led to silent data overwrites when offline devices with drifted local clocks reconnected.</li>
+                        </ul>
+
+                        <h5>Final Design</h5>
+                        <p>We switched to an MMKV-backed transaction outbox. When offline, progress actions write instantly to MMKV and update the optimistic Zustand cache, maintaining a 60fps render loop. Every write registers a monotonic sequence ID and unique transaction key. Upon reconnecting, a background task synchronizes the queued outbox events sequentially using high-water mark validation filters. Errant sync rejects are isolated in a local Dead-Letter vault, alerting the user via a minimal home-screen recovery banner to manually retry or clear failed states.</p>
+                    </div>
+                </details>
+
+                <!-- Deep Dive 3 -->
+                <details class="dd-card">
+                    <summary class="dd-summary">
+                        <div class="dd-summary-content">
+                            <span class="dd-badge">Database Performance</span>
+                            <h4>DynamoDB Hot Partition Debugging via k6 Load Testing</h4>
+                        </div>
+                        <i class="fas fa-chevron-down dd-icon"></i>
+                    </summary>
+                    <div class="dd-content">
+                        <h5>Problem</h5>
+                        <p>During stress testing with 2,500 concurrent virtual users querying Campus Connect listings, P99 API response latency spiked from 120ms to over 12 seconds, eventually dropping requests with HTTP 502 Bad Gateway timeouts.</p>
+
+                        <h5>Why It Was Difficult</h5>
+                        <p>AWS API Gateway logs initially pointed to Lambda cold starts. However, tracing with AWS X-Ray revealed that the bottleneck occurred on database read operations. The primary query path queried listings by a concentrated logical GSI index (e.g. `Category = Textbooks`), causing AWS to throttle queries on a single physical database partition.</p>
+
+                        <h5>Failed Approaches</h5>
+                        <ul>
+                            <li><strong>Provisioning manual capacity:</strong> Increasing read capacity units (RCUs) did not resolve the bottleneck, since the queries still hit the same physical partition block, wasting budget on unutilized overhead.</li>
+                            <li><strong>Global caching:</strong> Using standard caches masked the problem but introduced state synchronization delays when students added or deleted active listings.</li>
+                        </ul>
+
+                        <h5>Final Design</h5>
+                        <p>I implemented synthetic partition sharding on the DynamoDB global secondary index. By appending a deterministic hash suffix (`Category#HASH`, derived from `ProductID % 4`) to the partition key, we distributed the logical GSI records evenly across four physical AWS storage partitions. The client endpoint queries all four shards in parallel and merges the arrays. This eliminated partition throttling entirely, dropping P99 latencies back to a stable 85ms under full 2,500 concurrent load.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Timeline (Experience) -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career Journey</span>
+                <h2>Professional Experience</h2>
+                <p class="section-desc">Metric-dense timeline showing product delivery and backend systems execution.</p>
+            </div>
+            
+            <div class="timeline">
+                <!-- Pinecone Studio -->
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <span class="timeline-date">Aug 2025 – Present</span>
+                        <span class="timeline-location">Bellevue, WA (Open to Relocate)</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="role-header">
+                            <h3>AI Engineer</h3>
+                            <span class="company-tag">Pinecone Studio</span>
+                        </div>
+                        <p class="role-summary">Shipping enterprise-grade agentic AI products and document parsing RAG pipelines.</p>
+                        <ul class="timeline-bullets">
+                            <li>
+                                <strong>Agentic AI Pipelines:</strong> Designed and deployed retrieval-grounded multi-agent systems across 3 client environments, implementing Zod output verification and hybrid rerankers to reduce manual back-office document processing effort by 60%.
+                            </li>
+                            <li>
+                                <strong>Production Observability:</strong> Built a live telemetry harness tracking token usage, citation grounding, and evaluation latencies, identifying regressions prior to customer releases and improving P50 search speeds by 25%.
+                            </li>
+                            <li>
+                                <strong>Unified Deployment:</strong> Standardized multi-system Docker runtimes and continuous integration schedules, eliminating environment configuration drifts across core client accounts.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Golomt Bank -->
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <span class="timeline-date">May 2024 – Aug 2025</span>
+                        <span class="timeline-location">Ulaanbaatar, Mongolia</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="role-header">
+                            <h3>Software Engineer</h3>
+                            <span class="company-tag">Golomt Bank LLC</span>
+                        </div>
+                        <p class="role-summary">Engineered payments backend infrastructure and microservices for SocialPay, a major digital wallet.</p>
+                        <ul class="timeline-bullets">
+                            <li>
+                                <strong>Scalable Payments:</strong> Coordinated AliPay+ cross-border payment integration in high-throughput Spring Boot microservices, securely processing over 8,000 daily transaction events at a verified 99.95% service uptime.
+                            </li>
+                            <li>
+                                <strong>Reliability Engineering:</strong> Redesigned global database event consumption structures to enforce transaction idempotency, isolating flaky external gateway timeouts using Resilience4j circuit breakers and removing double-charge conflicts.
+                            </li>
+                            <li>
+                                <strong>Pipeline Refactoring:</strong> Re-architected high-volume Kafka payment stream routing, utilizing deduplication markers and synthetic sharding to safely filter redundant operations.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- PCDP LLC -->
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <span class="timeline-date">Jun 2023 – May 2024</span>
+                        <span class="timeline-location">Ulaanbaatar, Mongolia</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="role-header">
+                            <h3>Software Developer</h3>
+                            <span class="company-tag">PCDP LLC</span>
+                        </div>
+                        <p class="role-summary">Owned full-stack platforms and automated document generation workflows for operations teams.</p>
+                        <ul class="timeline-bullets">
+                            <li>
+                                <strong>Operations Infrastructure:</strong> Engineered a full-stack platform managing contractor onboarding, permit tracking, and proposal directories, replacing physical filing workflows.
+                            </li>
+                            <li>
+                                <strong>Document Automation:</strong> Integrated an LLM-assisted semantic parsing engine to draft complex state permits and project proposals, cutting file preparation time from 2 hours to under 20 minutes.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Teaching Assistant -->
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <span class="timeline-date">Aug 2022 – Dec 2025</span>
+                        <span class="timeline-location">Garden City, NY</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="role-header">
+                            <h3>Teaching Assistant</h3>
+                            <span class="company-tag">Adelphi University</span>
+                        </div>
+                        <p class="role-summary">Tutors computer science algorithms, database schemas, and structured programming paradigms.</p>
+                        <ul class="timeline-bullets">
+                            <li>
+                                <strong>CS Instruction:</strong> Mentored over 300 undergraduate students across Algorithms, Data Structures, and SQL courses, designing custom learning guides to improve assignment mastery.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Basecrew -->
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <span class="timeline-date">Jun 2023 – Aug 2023</span>
+                        <span class="timeline-location">Seattle, WA</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="role-header">
+                            <h3>Freelance Software Engineer</h3>
+                            <span class="company-tag">Basecrew</span>
+                            <a href="https://basecrew.us" target="_blank" class="live-link-timeline"><i class="fas fa-external-link-alt"></i> basecrew.us</a>
+                        </div>
+                        <p class="role-summary">Shipped responsive Next.js landing assets and service routers for a Seattle-based contractor.</p>
+                        <ul class="timeline-bullets">
+                            <li>
+                                <strong>Next.js Product:</strong> Built and launched a responsive, high-performance service interface at <a href="https://basecrew.us" target="_blank" style="text-decoration: underline; color: var(--text-primary);">basecrew.us</a>, organizing dynamic maps and CSS micro-interactions.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Focus Roadmap Section (Replacing Skills table) -->
+    <section id="interests" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Capabilities</span>
+                <h2>Active Technical Interests</h2>
+                <p class="section-desc">Frontier research fields and engineering disciplines I focus on daily.</p>
+            </div>
+            
+            <div class="interests-grid-clean">
+                <div class="interest-pill-box">
+                    <h4>AI Systems</h4>
+                    <span>Agent evaluation infrastructure</span>
+                    <span>Retrieval quality & observability</span>
+                    <span>Structured grounding (BM25 + Rerank)</span>
+                </div>
+                <div class="interest-pill-box">
+                    <h4>Distributed Systems</h4>
+                    <span>Local-first sync engines</span>
+                    <span>Distributed state coordination</span>
+                    <span>Idempotent transaction layers</span>
+                </div>
+                <div class="interest-pill-box">
+                    <h4>Product Engineering</h4>
+                    <span>Real-time mobile infrastructure</span>
+                    <span>Fluid canvas rendering (Skia)</span>
+                    <span>High-throughput serverless backends</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Refined Minimal Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-title">
-                <h2>Get In Touch</h2>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Email</h4>
-                            <p><a href="mailto:baljaa367@mail.com">baljaa367@mail.com</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Phone</h4>
-                            <p>+1 (516) 272 1460</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Location</h4>
-                            <p>Hempstead, NY</p>
-                        </div>
-                    </div>
+            <div class="contact-card">
+                <div class="contact-header">
+                    <span class="section-tag">Let's Connect</span>
+                    <h2>Get in Touch</h2>
+                    <p>I enjoy discussing mobile sync patterns, structured AI pipelines, backend reliability, and full-stack product ownership. Reach out directly.</p>
                 </div>
-                <div class="contact-form">
-                    <h3>Or send me a message directly!</h3>
-                    <a href="mailto:baljaa367@gmail.com" class="btn btn-primary">Send Email</a>
+                
+                <div class="contact-body">
+                    <div class="contact-info-grid">
+                        <a href="mailto:baljaa367@gmail.com" class="contact-link-card">
+                            <div class="card-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="card-text">
+                                <span>Direct Mail</span>
+                                <strong>baljaa367@gmail.com</strong>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/baljinnyamm" target="_blank" class="contact-link-card">
+                            <div class="card-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div class="card-text">
+                                <span>LinkedIn</span>
+                                <strong>linkedin.com/in/baljinnyamm</strong>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Baljinnyam-P" target="_blank" class="contact-link-card">
+                            <div class="card-icon"><i class="fab fa-github"></i></div>
+                            <div class="card-text">
+                                <span>GitHub Workspace</span>
+                                <strong>github.com/Baljinnyam-P</strong>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="contact-action-wrapper">
+                        <a href="mailto:baljaa367@gmail.com" class="btn btn-primary">Initiate Contact</a>
+                        <a href="Baljinnyam_Puntsagnorov_Julius.pdf" download class="btn btn-outline"><i class="fas fa-file-download"></i> Get Resume</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Editorial Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-links">
-                <a href="https://github.com/Baljinnyam-P" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/baljinnyam-puntsagnorov-70ab17371/" class="social-link"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <div class="container footer-container">
+            <div class="footer-left">
+                <p class="footer-title">Baljinnyam Puntsagnorov</p>
+                <p class="footer-tagline">Full Stack / AI Engineer</p>
             </div>
-            <p class="footer-text">&copy; 2025 Baljinnyam Puntsagnorov. All Rights Reserved.</p>
+            <div class="footer-right">
+                <p class="copyright">&copy; 2026 Baljinnyam Puntsagnorov. Focused on systems reliability & product quality.</p>
+            </div>
         </div>
     </footer>
 
+    <!-- Minimal Functional Scripts -->
     <script>
-        // Simple JavaScript for mobile menu toggle
         document.addEventListener('DOMContentLoaded', function() {
+            // Hamburger Mobile Menu Toggle
             const hamburger = document.getElementById('hamburger');
             const navLinks = document.getElementById('nav-links');
             
-            if (hamburger) {
+            if (hamburger && navLinks) {
                 hamburger.addEventListener('click', function() {
+                    hamburger.classList.toggle('active');
                     navLinks.classList.toggle('active');
                 });
             }
@@ -431,9 +726,31 @@
             const links = document.querySelectorAll('.nav-links a');
             links.forEach(link => {
                 link.addEventListener('click', function() {
-                    navLinks.classList.remove('active');
+                    if (hamburger && navLinks) {
+                        hamburger.classList.remove('active');
+                        navLinks.classList.remove('active');
+                    }
                 });
             });
+
+            // Collapsible Secondary Projects Drawer
+            const drawerTrigger = document.getElementById('drawer-trigger');
+            const drawerContent = document.getElementById('drawer-content');
+            const drawerIcon = document.getElementById('drawer-icon');
+
+            if (drawerTrigger && drawerContent && drawerIcon) {
+                drawerTrigger.addEventListener('click', function() {
+                    const isOpen = drawerContent.classList.contains('open');
+                    
+                    if (isOpen) {
+                        drawerContent.classList.remove('open');
+                        drawerIcon.style.transform = 'rotate(0deg)';
+                    } else {
+                        drawerContent.classList.add('open');
+                        drawerIcon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            }
         });
     </script>
 </body>
