@@ -21,8 +21,15 @@ const projects: Project[] = [
     description:
       "A cross-platform habit-tracking app for building routines with friends, featuring real-time shared routines and leaderboards via Apple HealthKit and Android Health Connect. Built a local-first sync engine with an MMKV-persisted outbox, optimistic updates, and dead-letter recovery to stay consistent on unreliable mobile networks.",
     stack: ["React Native", "TypeScript", "AppSync", "AWS Lambda", "DynamoDB", "SQS", "Firebase"],
+  },
+  {
+    name: "BaseCrew",
+    categories: ["Full-stack"],
+    description:
+      "A live marketing website built for a contractor company, designed and shipped end to end with a responsive layout and fast static delivery.",
+    stack: ["Next.js", "React", "Tailwind CSS", "Vercel"],
     liveUrl: "https://basecrew.us",
-    liveLabel: "Live site",
+    liveLabel: "basecrew.us",
   },
   {
     name: "Campus Connect",
