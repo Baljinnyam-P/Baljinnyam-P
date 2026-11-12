@@ -16,16 +16,16 @@ Most of my experience has been around building AI-powered workflow systems, real
 
 ## Experience
 
-### Forward Deployed Engineer @ Nest Solutions | Aug 2025 – May 2026
+### Forward Deployed Engineer @ Nest Solutions | Sep 2024 – Present
 Worked directly with enterprise client teams to deploy AI-powered workflow systems, RAG applications, and internal automation tooling. Built integrations between AI services and existing operational systems while improving observability, retrieval quality, and deployment reliability across production environments.
 
-### Software Engineer @ Golomt Bank | May 2024 – Aug 2025
+### Software Engineer @ Golomt Bank | May 2023 – Aug 2024
 Worked on the SocialPay digital wallet platform, building AliPay+ cross-border payment integrations and backend reliability improvements across Spring Boot microservices. Focused on idempotent transaction handling, Kafka event processing, circuit breaker resilience, and CI/CD optimization.
 
-### Software Developer @ Basecrew | Aug 2023 – Dec 2024
+### Software Developer @ Basecrew 
 Built and deployed a production web platform for a Seattle construction contractor, translating business requirements into production-ready software across frontend, backend, and deployment workflows.
 
-### Web Developer @ PCDP | Jan 2023 – Aug 2023
+### Web Developer @ PCDP | Sep 2022 – May 2023
 Built early-stage LLM and RAG-based workflow automation prototypes for construction proposal generation and permitting operations support.
 
 ---
